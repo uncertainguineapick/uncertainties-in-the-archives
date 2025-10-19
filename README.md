@@ -16,7 +16,8 @@ To present our findings about ambiguities in geographical data with colonial con
 
 <img width="2500" height="1700" alt="guineapick_cover" src="https://github.com/user-attachments/assets/256cc0c5-f924-434e-9f0a-0b3c57e8effe" />
 
-## Project code
+## Project Code
+`qa-live-event-guineapick.json`: data for the quizacademy quiz used during the hackathon
 [https://quizacademy.io/U-LSHIUD](https://quizacademy.io/U-LSHIUD) (not available anymore)
 
 Here, we provide all the files we work with during the hackathon:
