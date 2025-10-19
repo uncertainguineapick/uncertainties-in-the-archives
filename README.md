@@ -18,7 +18,6 @@ To present our findings about ambiguities in geographical data with colonial con
 
 ## Project Code
 `qa-live-event-guineapick.json`: data for the quizacademy quiz used during the hackathon
-[https://quizacademy.io/U-LSHIUD](https://quizacademy.io/U-LSHIUD) (not available anymore)
 
 Here, we provide all the files we work with during the hackathon:
 - `EM_Entities.csv`: initial data provided by the Ethnological Museum Berlin via the Stabi Lab converted to CSV
