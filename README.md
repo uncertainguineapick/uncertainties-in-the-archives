@@ -1,4 +1,7 @@
-# Uncertainties of the Archives
+# Uncertainties in the Archives
+This project discovers uncertainties in geographical data with colonial contexts and was developed during the [cultural data hackathon](https://lab.sbb.berlin/culture-explore-data/) at the Stabi Lab Berlin.
+
+## Project Description
 We explored uncertainties and ambiguities in geographical data provided by the Ethnological Museum in Berlin. Our data consists of semi-structured information about people and corporations connected to the museum until 1950 ([Culture Translocated: Entities in the Ethnological Museum – Stabi Lab](https://lab.sbb.berlin/culture-translocated/)).
 
 After preprocessing using a simple Python script, we examined the data more closely and noticed that some places appear with many different spellings (e.g. Frankfurt) or include markers of uncertainty (e.g. question marks). Digging deeper revealed more complex challenges that we could not address automatically:
@@ -12,3 +15,17 @@ We view the process of data preprocessing as a method to explore (cultural) data
 To present our findings about ambiguities in geographical data with colonial contexts, we created a little fun quiz named "GuineaPick" to allow the audience to experience the difficulties of mapping historical geographical data.
 
 <img width="2500" height="1700" alt="guineapick_cover" src="https://github.com/user-attachments/assets/256cc0c5-f924-434e-9f0a-0b3c57e8effe" />
+
+## Project code
+[https://quizacademy.io/U-LSHIUD](https://quizacademy.io/U-LSHIUD) (not available anymore)
+
+Here, we provide all the files we work with during the hackathon:
+- `EM_Entities.csv`: initial data provided by the Ethnological Museum Berlin via the Stabi Lab converted to CSV
+- `EM_Entities_restructured.csv`: restructured version of the initial data where every type of location ("Geo. Bez.") is in its own column using `restructure_places.py`
+- `EM_geonames.csv`: list of all available geographical entities mentioned in the data using `make_geonames_list.py`
+- `EM_geonames_clean.csv`: manually cleaned data, different spellings of the same geographical location were copied into one line
+- `EM_geonames_clean_coord-parts.csv`: data enriched with geo coordinates from GeoNames API where available
+
+- `restructure_places.py`: adds a column for every type of location ("Geo. Bez.") in the data
+- `make_geonames_list.py`: makes a list of all geo names in the data by using simple regex expressions
+- `use_geonames_api_pandas.py`: reads the geonames list and makes a request to the GeoNames API. A own geonames account name is needed and API use is limited to 1000 requests/hour
